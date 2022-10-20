@@ -1,0 +1,184 @@
+/* Testimonoials section styling */
+
+.testimonials {
+   padding-top: 50px;
+   padding-bottom: 80px;
+}
+
+.testimonials-texts-wrapper {
+   width: 100%;
+   max-width: 622px;
+   margin-bottom: 30px;
+}
+
+.testimonials-heading {
+   font-size: 36px;
+   line-height: 36px;
+   letter-spacing: -0.01em;
+   color: var(--main-black);
+}
+
+.testimonials-desc {
+   line-height: 155%;
+   letter-spacing: 0.02em;
+   color: var(--main-dark-gray);
+}
+
+.slider-item {
+   width: 100%;
+   max-width: 405px;
+   padding: 31px;
+   background: #f7f5ff;
+   border-radius: 8px;
+
+   &::before {
+      content: "";
+      display: block;
+      width: 113px;
+      height: 19px;
+      margin-bottom: 30px;
+      background-image: url("../images/stars.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+}
+
+.first-slider-item-personality::before {
+   content: "";
+   display: block;
+   width: 54px;
+   height: 54px;
+   margin-right: 15px;
+   background-image: url("../images/brooklyn.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.second-slider-item-personality::before {
+   content: "";
+   display: block;
+   width: 54px;
+   height: 54px;
+   margin-right: 15px;
+   background-image: url("../../images/darrell.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.third-slider-item-personality::before {
+   content: "";
+   display: block;
+   width: 54px;
+   height: 54px;
+   margin-right: 15px;
+   background-image: url("../../images/courtney.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.slider-item-desc {
+   margin-bottom: 30px;
+   line-height: 155%;
+   letter-spacing: 0.02em;
+   color: var(--main-black);
+}
+
+.slick-prev {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: -25px;
+   z-index: 5;
+   display: none;
+   width: 54px;
+   height: 54px;
+   border: none;
+   background-color: var(--main-white);
+   border: 0.96024px solid var(--main-red);
+   border-radius: 48.012px;
+
+   &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 17px;
+      height: 17px;
+      background-image: url("../../images/left-arrow.svg");
+      background-repeat: no-repeat;
+      content: "";
+   }
+
+   &:hover {
+      background-color: var(--main-red);
+   }
+}
+
+.slick-next {
+   position: absolute;
+   top: 50%;
+   right: -25px;
+   transform: translateY(-50%);
+   z-index: 5;
+   width: 54px;
+   height: 54px;
+   display: none;
+   border: none;
+   background-color: #ffffff;
+   border: 0.96024px solid var(--main-red);
+   border-radius: 48.012px;
+
+   &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 17px;
+      height: 17px;
+      background-image: url("../../images/right-arrow.svg");
+      background-repeat: no-repeat;
+      content: "";
+   }
+
+   &:hover {
+      background-color: var(--main-red);
+   }
+}
+
+@include mobile-first (768px) {
+   .testimonials-texts-wrapper {
+      margin-bottom: 80px;
+   }
+
+   .testimonials-heading {
+      font-size: 48px;
+      line-height: 120%;
+   }
+
+   .slider-item:not(:last-child) {
+      margin-right: 32px;
+   }
+
+   .slick-prev {
+      display: block;
+   }
+
+   .slick-next {
+      display: block;
+   }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+   .first-slider-item-personality::before {
+      background-image: url("../images/brooklyn@2x.png");
+   }
+
+   .second-slider-item-personality::before {
+      background-image: url("../../images/darrell@2x.png");
+   }
+}

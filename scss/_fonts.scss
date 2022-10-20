@@ -1,1 +1,48 @@
 /* Fonts */
+@font-face {
+   font-family: 'Nunito';
+   font-display: swap;
+   font-weight: 400;
+   src: url('../fonts/nunito-v25-latin_cyrillic-regular.woff2') format('woff2'),
+      url('../fonts/nunito-v25-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Nunito';
+   font-display: swap;
+   font-weight: 500;
+   src: url('../fonts/nunito-v25-latin_cyrillic-500.woff2') format('woff2'),
+      url('../fonts/nunito-v25-latin_cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Nunito';
+   font-display: swap;
+   font-weight: 600;
+   src: url('../fonts/nunito-v25-latin_cyrillic-600.woff2') format('woff2'),
+      url('../fonts/nunito-v25-latin_cyrillic-600.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Nunito';
+   font-display: swap;
+   font-weight: 700;
+   src: url('../fonts/nunito-v25-latin_cyrillic-700.woff2') format('woff2'),
+      url('../fonts/nunito-v25-latin_cyrillic-700.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Nunito';
+   font-display: swap;
+   font-weight: 800;
+   src: url('../fonts/nunito-v25-latin_cyrillic-800.woff2') format('woff2'),
+      url('../fonts/nunito-v25-latin_cyrillic-800.woff') format('woff');
+}
+
+@font-face {
+   font-family: 'Roboto';
+   font-display: swap;
+   font-weight: 400;
+   src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+      url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}

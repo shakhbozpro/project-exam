@@ -1,0 +1,104 @@
+/* Pricing section styling */
+
+.pricing {}
+
+.pricing-texts-wrapper {
+   width: 100%;
+   max-width: 853px;
+   margin-bottom: 30px;
+}
+
+.pricing-heading {
+   margin-bottom: 10px;
+   font-size: 36px;
+   line-height: 34px;
+   letter-spacing: -0.01em;
+}
+
+.pricing-desc {
+   line-height: 22px;
+   letter-spacing: 0.02em;
+}
+
+.pricing-item {
+   width: 100%;
+   max-width: 310px;
+   padding: 31px;
+   border-radius: 8px;
+   cursor: pointer;
+
+   &:not(:last-child) {
+      margin-right: 32px;
+   }
+
+   &:hover {
+      border: 1px solid var(--main-red);
+   }
+}
+
+.pricing-item-plan {
+   width: 110px;
+}
+
+.pricing-item-plan-heading {
+   margin-bottom: 8px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 150%;
+   letter-spacing: -0.01em;
+   color: var(--main-black);
+}
+
+.pricing-item-plan-price {
+   margin-bottom: 8px;
+   font-size: 28px;
+   line-height: 120%;
+   color: var(--main-black);
+}
+
+.pricing-item-plan-yearly {
+   line-height: 155%;
+   letter-spacing: 0.02em;
+   color: var(--main-dark-gray);
+}
+
+.pricing-list-item {
+   line-height: 155%;
+   color: var(--main-dark-gray);
+
+   &:not(:last-child) {
+      margin-bottom: 16px;
+   }
+}
+
+.pricing-item-link {
+   padding: 16px 28px;
+   color: var(--main-red);
+   border: 1px solid var(--main-red);
+   border-radius: 32px;
+
+   &:hover {
+      color: white;
+      background-color: var(--main-red);
+   }
+}
+
+@include mobile-first (768px) {
+   .pricing-texts-wrapper {
+      margin-bottom: 80px;
+   }
+
+   .pricing-heading {
+      margin-bottom: 10px;
+      font-size: 48px;
+      line-height: 120%;
+   }
+
+   .pricing-desc {
+      line-height: 155%;
+   }
+
+   .pricing-item {
+      max-width: 405px;
+   }
+}

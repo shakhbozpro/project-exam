@@ -3,3 +3,15 @@
         @content;
     }
 }
+
+@mixin video-sizing($min) {
+    @media only screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin after-tablet-size($min) {
+    @media only screen and (min-width: $min) {
+        @content;
+    }
+}

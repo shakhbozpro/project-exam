@@ -1,1 +1,114 @@
+/* Site header styling */
 
+.site-header {
+   position: relative;
+   padding-top: 8px;
+
+}
+
+.logo-img {
+   width: 160px;
+   height: 32px;
+}
+
+.site-nav {
+   top: 180px;
+   left: 45%;
+   z-index: 3;
+   width: 100vh;
+   height: 100vh;
+   background-color: #7e35eb;
+   transform: translateY(-500%);
+   transition: transform 0.7s ease;
+}
+
+.site-nav.shownav {
+   transform: translateY(0);
+}
+
+.nav-item:not(:last-child) {
+   margin-bottom: 40px;
+}
+
+.nav-link {
+   font-size: 18px;
+
+   &:hover {
+      text-decoration: underline;
+      opacity: 0.5;
+   }
+}
+
+.theme-btn {
+   position: absolute;
+   top: 8px;
+   left: 20px;
+   height: 32px;
+   border: none;
+
+   &::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url("../../images/theme-mode-icon.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+}
+
+.burger-btn {
+   height: 26px;
+
+   &::before {
+      content: "";
+      display: block;
+      width: 26px;
+      height: 26px;
+      background-image: url("../../images/burger-btn.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+}
+
+.burger-close-btn::before {
+   content: "";
+   display: block;
+   width: 26px;
+   height: 26px;
+   background-image: url("../../images/burger-btn-close.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+@include mobile-first (768px) {
+   .site-header {
+      padding-top: 49px;
+      padding-bottom: 49px;
+   }
+
+   .site-nav {
+      position: static !important;
+      transform: translateY(0);
+      background-color: transparent;
+      width: max-content;
+      height: auto;
+      margin-right: 30px;
+      padding: 0;
+   }
+
+   .nav-item:not(:last-child) {
+      margin-right: 30px;
+   }
+
+   .theme-btn {
+      position: static;
+      top: 0;
+      height: 42px;
+
+      &::before {
+         width: 42px;
+         height: 42px;
+      }
+   }
+}

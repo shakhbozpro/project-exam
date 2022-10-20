@@ -17,7 +17,26 @@ html {
 
 body {
   overflow-x: hidden;
-  // font-family: "Poppins", "Arial", sans-serif;
+  font-family: "Nunito", "Arial", sans-serif;
+  background-image: url("../images/hero-bg-design.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url("../images/hero-bg-design@2x.png");
+  }
+}
+
+img {
+  display: block;
+  height: 100%;
 }
 
 /* Sticky-footer */
